@@ -1,0 +1,18 @@
+{
+  "name": "alt-tutorial-test",
+  "version": "0.0.1",
+  "description": "A test simple flux tutorial built with alt and react",
+  "main": "server.js",
+  "dependencies": {
+    "alt": "^0.16.0",
+    "react": "^0.12.2"
+  }, 
+  "devDependencies": {
+    "browserify": "^8.0.3",
+    "reactify": "^0.17.1"
+  },
+  "scripts": {
+    "build": "browserify -t [reactify --es6] app.jsx > build/app.js",
+    "start": "npm run build && open 'index.html' "
+  }
+}
